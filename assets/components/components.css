@@ -1,0 +1,94 @@
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating to a reusable component.
+btns, inputs, modal, dropdown, form, icon, label
+*/
+
+
+.hidden {
+    display: none !important;
+}
+
+.titulo-seccao {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light-green);
+    padding: 6rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .grid-2 {
+        display: grid;
+        grid:
+        'titulo1 titulo2' auto
+        'conteudo1 conteudo2' 1fr
+        /auto 1fr;
+    }
+}
+
+/* JavaScript scrolling */
+
+.inView {
+    opacity: 1;
+}
+
+.noView {
+    opacity: 0;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1.5s both;
+    -webkit-animation: fadeInLeft 1.5s both;
+    -o-animation: fadeInLeft 1.5s both;
+    -moz-animation: fadeInLeft 1.5s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.icons__text {
+    padding-left: 10px;
+}

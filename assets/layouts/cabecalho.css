@@ -1,0 +1,43 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    font-weight: 700;
+}
+
+.menu__link--destaque {
+    color: var(--light-green);
+}
+
+.menu__link:hover {
+    color: var(--brown);
+}
+
+@media screen and (min-width: 800px) {
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu__lista {
+        font-size: 18px;
+        gap: 1.3rem;
+    }
+}

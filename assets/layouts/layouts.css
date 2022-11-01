@@ -1,0 +1,15 @@
+/*
+This file is used to contain all component imports.
+Files inside this folder can contain specific element styles and layout. 
+main-nav, footer, sidebar
+*/
+
+@import url('./cabecalho.css');
+@import url('./logo.css');
+@import url('./bemvindo.css');
+@import url('./sobre.css');
+@import url('./educacao.css');
+@import url('./experiencia.css');
+@import url('./habilidades.css');
+@import url('./contatos.css');
+@import url('./artigos.css');

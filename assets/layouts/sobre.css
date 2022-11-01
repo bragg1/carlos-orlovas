@@ -1,0 +1,74 @@
+.sobre {
+    min-height: 70vh;
+    width: 100%;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.sobre__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.sobre__texto {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* CV */
+
+.curriculum {
+    display: none;
+    align-items: center;
+    font-size: 12px;
+}
+
+.curriculum:hover {
+    transform: scale(1.2);
+}
+
+.cv-fa {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background: blue;
+    padding: 10px 8px 10px 10px;
+}
+
+.cv-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: crimson;
+    padding: 10px 10px 10px 5px;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 800px) {
+    .sobre-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sobre__img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .sobre__texto {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        padding: 3rem 0;
+        width: 70%;
+    }
+}

@@ -1,0 +1,49 @@
+/*
+    >>Global<< styles in all sites (h1-6, p, a)
+    tag body, tag main, divs
+*/
+
+* {
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+body {
+    background: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+b {
+    color: var(--brown);
+    font-weight: 700;
+}
+
+p > strong {
+    color: var(--brown);
+    font-weight: 700;
+}
+
+ul,li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+section {
+    padding: 0 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        padding: 0 8rem;
+    }
+}

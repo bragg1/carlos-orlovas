@@ -1,0 +1,81 @@
+.contatos {
+    background: var(--light-green);
+    color: var(--background-color);
+    height: 250px;
+    padding: 2rem 2rem;
+}
+
+.contatos--flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contatos__logo {
+    display: none;
+    font-size: 2rem;
+}
+
+.contatos__card {
+    width: 200px;
+    height: 100px;
+}
+
+.contatos__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contatos__info {
+    display: flex;
+    gap: 20px;
+    font-size: .8rem;
+}
+
+.contatos--flex-col {
+    flex-direction: column;
+}
+
+.contatos__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatos__link {
+    cursor: pointer;
+}
+
+.fa:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (min-width: 800px) {    
+    .contatos--flex {
+        flex-flow: row nowrap;
+    }
+
+    .contatos__logo {
+        display: block;
+    }
+
+    .contatos__card {
+        display: grid;
+        grid:
+        'titulo' auto
+        'info' 1fr
+        / auto;
+    }
+
+    .contatos__titulo {
+        grid-area: titulo;
+        margin-bottom: 1.5rem;
+    }
+
+    .contatos__info {
+        grid-area: info;
+        font-size: 1rem;
+        flex-direction: column;
+    }
+}

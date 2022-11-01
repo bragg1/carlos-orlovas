@@ -1,0 +1,53 @@
+.experiencia--flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experiencia__card {
+    display: grid;
+    grid:
+    'subtitulo' auto
+    'texto' 1fr
+    /100%;
+}
+
+.experiencia__subtitulo--flex {
+    grid-area: subtitulo;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experiencia__subtitulo {
+    color: var(--light-green);
+    font-size: 1.6rem;
+}
+
+.experiencia__texto {
+    grid-area: texto;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.experiencia__texto > p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .experiencia__titulo {
+        grid-area: titulo2;
+    }
+    
+    .experiencia--flex {
+        grid-area: conteudo2;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .experiencia__card {
+        width: 45%;
+    }
+}

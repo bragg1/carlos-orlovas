@@ -1,0 +1,31 @@
+.bemvindo {
+    height: 40vh;
+    background: url('../../img/rome-bg.jpg') no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bemvindo__texto {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #F0EBCE;
+}
+
+.bemvindo__texto:nth-child(2) {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .bemvindo {
+        height: 70vh;
+        background-size: 100%;
+        gap: 2rem;
+    }
+
+    .bemvindo__texto:nth-child(2) {
+        display: block;
+    }
+}
