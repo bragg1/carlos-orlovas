@@ -1,5 +1,5 @@
 .contatos {
-    background: var(--light-green);
+    background: var(--light-background);
     color: var(--background-color);
     height: 250px;
     padding: 2rem 2rem;
@@ -17,8 +17,14 @@
     font-size: 2rem;
 }
 
+.contatos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .contatos__card {
-    width: 200px;
+    width: 250px;
     height: 100px;
 }
 
@@ -29,8 +35,10 @@
 
 .contatos__info {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     font-size: .8rem;
+    justify-content: center;
 }
 
 .contatos--flex-col {

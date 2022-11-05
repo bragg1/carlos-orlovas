@@ -1,3 +1,7 @@
+.educacao {
+    grid-area: seccao1;
+}
+
 .educacao--flex {
     display: flex;
     flex-direction: column;
@@ -8,7 +12,7 @@
 /* CARD */
 
 .educacao__card {
-    width: 350px;
+    width: 100%;
     display: grid;
     grid:
     'icone title'
@@ -53,24 +57,20 @@
 }
 
 
-
+@media screen and (min-width: 420px) {
+    .educacao__card {
+        width: 340px;
+    }
+}
 
 @media screen and (min-width: 800px) {
     .educacao {
         padding-right: 0;
     }
-
-    .educacao__titulo {
-        grid-area: titulo1;
-    }
-
-    .educacao--flex {
-        grid-area: conteudo1;
-    }
-    
+     
     .educacao__card {
-        width: 100%;
         column-gap: 1rem;
+        width: 350px;
     }
 
     .educacao__icon {

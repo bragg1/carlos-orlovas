@@ -1,10 +1,14 @@
 :root {
-    --brown: #AA8B56;
-    --light-brown: #CCBA9A;
-    --font-color: #395144;
-    --light-green: #4E6C50;
-    --strong-green: #052809;
-    --background-color: #F0EBCE;
+    --font-color: #5b5b58;
+    --font-color-secundary: #D18911;
+    --light-font-color: #164773;
+    --strong-font-color: #1F3B68;
+    --light-background: #34495E;
+    --background-color: rgb(212, 212, 212);
 }
 
-/* linear-gradient(to right, #fffdee, */
+
+/*  #D18911 LARANJA 
+    #54432C MARROM
+    #888E8C CINZA CLARO
+*/

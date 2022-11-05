@@ -1,17 +1,37 @@
-.placeholder {
+.habilidades {
+    grid-area: seccao2;
+}
+
+.habilidades--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+
+.placeholder__card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
-    height: 200px;
 }
 
-.placeholder__fa {
+.placeholder__fa::before {
     font-size: 3rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 50%;
     animation: 12s ease-in-out infinite loading;
+}
+
+.placeholder__txt {
+    text-align: center;
+}
+
+.placeholder__description {
+    text-align: justify;
+    display: none;
 }
 
 @keyframes loading {
@@ -19,22 +39,55 @@
         border: none;
     }
     25% {
-        border-right: 3px solid var(--light-green);
+        border-right: 3px solid var(--light-font-color);
     }
     50% {
-        border-right: 3px solid var(--light-green);
-        border-bottom: 3px solid var(--light-green);
+        border-right: 3px solid var(--light-font-color);
+        border-bottom: 3px solid var(--light-font-color);
     }
     75% {
-        border-right: 3px solid var(--light-green);
-        border-bottom: 3px solid var(--light-green);
-        border-left: 3px solid var(--light-green);
+        border-right: 3px solid var(--light-font-color);
+        border-bottom: 3px solid var(--light-font-color);
+        border-left: 3px solid var(--light-font-color);
     }
     100% {
-        border-right: 3px solid var(--light-green);
-        border-bottom: 3px solid var(--light-green);
-        border-left: 3px solid var(--light-green);
-        border-top: 3px solid var(--light-green);
+        border-right: 3px solid var(--light-font-color);
+        border-bottom: 3px solid var(--light-font-color);
+        border-left: 3px solid var(--light-font-color);
+        border-top: 3px solid var(--light-font-color);
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    .habilidades {
+        padding-left: 0 4rem;
+    }
+
+    .habilidades--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .placeholder__card {
+        display: grid;
+        /* grid-template-columns: auto 1fr; */
+        grid-template-rows: auto 1fr;
+    }
+    
+    .placeholder__fa {
+        grid-area: 1 / 1;
+    }
+    
+    .placeholder__txt {
+        grid-area: 2 / 1;
+    }
+    
+    .placeholder__description {
+        /* grid-area: 1 / 2 / 3 / 3; */
+        justify-content: center;
+        align-items: center;
+    }
 }

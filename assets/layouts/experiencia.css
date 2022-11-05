@@ -1,3 +1,7 @@
+.experiencia {
+    grid-area: seccao3;
+}
+
 .experiencia--flex {
     display: flex;
     flex-direction: column;
@@ -20,7 +24,7 @@
 }
 
 .experiencia__subtitulo {
-    color: var(--light-green);
+    color: var(--light-font-color);
     font-size: 1.6rem;
 }
 
@@ -37,12 +41,7 @@
 }
 
 @media screen and (min-width: 800px) {
-    .experiencia__titulo {
-        grid-area: titulo2;
-    }
-    
     .experiencia--flex {
-        grid-area: conteudo2;
         flex-direction: row;
         justify-content: space-between;
     }

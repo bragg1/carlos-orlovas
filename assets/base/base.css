@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     transition: all .3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,12 +19,12 @@ a {
 }
 
 b {
-    color: var(--brown);
+    color: var(--strong-font-color);
     font-weight: 700;
 }
 
 p > strong {
-    color: var(--brown);
+    color: var(--font-color-secundary);
     font-weight: 700;
 }
 
@@ -43,6 +44,12 @@ section {
 }
 
 @media screen and (min-width: 800px) {
+    section {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     section {
         padding: 0 8rem;
     }

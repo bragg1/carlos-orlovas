@@ -20,6 +20,7 @@
                 <li class="menu__item"><a href="#sobre" class="menu__link">Sobre</a></li>
                 <li class="menu__item"><a href="#educacao" class="menu__link">Educação</a></li>
                 <li class="menu__item"><a href="#habilidades" class="menu__link">Habilidades</a></li>
+                <li class="menu__item"><a href="#experiencia" class="menu__link">Experiência</a></li>
                 <li class="menu__item"><a href="#contatos" class="menu__link">Contatos</a></li>
                 <li class="menu__item"><a href="#artigos" class="menu__link menu__link--destaque">Artigos</a></li>
             </ul>
@@ -28,7 +29,6 @@
     <main>
         <section class="bemvindo">
             <span class="bemvindo__texto">Seja bem-vindo!</span>
-            <span class="bemvindo__texto">Convido você a conhecer a minha página. Caso tenha interesse, entre em contato comigo por e-mail ou telefone, será um prazer atendê-lo.</span>
         </section>
         <section id="sobre" class="sobre">
             <h1 class="titulo-seccao">Quem sou eu</h1>
@@ -41,7 +41,7 @@
                 </a>
             </div>
         </section>
-        <div class="grid-2">
+        <div class="grid-3">
             <section id="educacao" class="educacao">
                 <h1 class="educacao__titulo titulo-seccao">Educação</h1>
                 <ul class="educacao--flex">
@@ -65,7 +65,32 @@
                     </li>
                 </ul>
             </section>
-            <section class="experiencia">
+            <section class="habilidades" id="habilidades">
+                <h1 class="titulo-seccao habilidades__titulo">Habilidades</h1>
+                <div class="habilidades--grid">
+                    <div class="placeholder__card">
+                        <i class="placeholder__fa fa-solid fa-chalkboard"></i>
+                        <span class="placeholder__txt">Habilidade I</span>
+                        <p class="placeholder__description">Descrição</p>
+                    </div>
+                    <div class="placeholder__card">
+                        <i class="placeholder__fa fa-solid fa-atom"></i>
+                        <span class="placeholder__txt">Habilidade II</span>
+                        <p class="placeholder__description">Descrição</p>
+                    </div>
+                    <div class="placeholder__card">
+                        <i class="placeholder__fa fa-solid fa-microscope"></i>
+                        <span class="placeholder__txt">Habilidade III</span>
+                        <p class="placeholder__description">Descrição</p>
+                    </div>
+                    <div class="placeholder__card">
+                        <i class="placeholder__fa fa-solid fa-medal"></i>
+                        <span class="placeholder__txt">Habilidade IV</span>
+                        <p class="placeholder__description">Descrição</p>
+                    </div>
+                </div>
+            </section>
+            <section id="experiencia" class="experiencia">
                 <h1 class="experiencia__titulo titulo-seccao">Experiência</h1>
                 <div class="experiencia--flex">
                     <article class="experiencia__card">
@@ -98,13 +123,6 @@
                     </article>
             </section>
         </div>
-        <section class="habilidades" id="habilidades">
-            <h1 class="titulo-seccao">Habilidades</h1>
-            <div class="placeholder">
-                <i class="placeholder__fa fa-sharp fa-solid fa-wrench"></i>
-                <span class="placeholder__txt">Em construção!</span>
-            </div>
-        </section>
         <section id="artigos" class="artigos">
             <h1 class="titulo-seccao">Artigos</h1>
             <ul class="artigos--flex">
@@ -112,7 +130,7 @@
                     <div class="card__item">
                         <img src="" alt="" class="card__item-imagem">
                         <span class="em-breve">Em breve!</span>
-                        <h2 class="card__item-titulo">Evento em que participei</h2>
+                        <h2 class="card__item-titulo">Recuperação de crédito</h2>
                         <p class="card__item-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac porttitor erat, vel blandit neque. Donec ut odio malesuada, malesuada nunc et, fringilla eros.</p>
                     </div>
                 </li>
@@ -132,18 +150,20 @@
             <h1>Carlos Eduardo</h1>
             <b>Orlovas</b>
         </div>
-        <div class="contatos__card">
-            <h3 class="contatos__titulo">Redes sociais</h3>
-            <div class="contatos__info">
-                <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-linkedin fa-xl"></i><span id="linkedin">@carlos</span></a>
-                <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-instagram fa-xl"></i><span id="instagram">@carlos</span></a>
+        <div class="contatos__container">
+            <div class="contatos__card">
+                <h3 class="contatos__titulo">Redes sociais</h3>
+                <div class="contatos__info">
+                    <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-linkedin fa-xl"></i><span id="linkedin">@carlos_orlovas</span></a>
+                    <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-instagram fa-xl"></i><span id="instagram">@carlos_orlovas</span></a>
+                </div>
             </div>
-        </div>
-        <div class="contatos__card">
-            <h3 class="contatos__titulo">Entre em contato</h3>
-            <div class="contatos__info contatos--flex-col">
-                <a href="#" class="contatos__item contatos__link"><i class="fa fa-envelope fa-xl"></i><span id="email">carlos.orlovas@outlook.com</span></a>
-                <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-whatsapp fa-xl"></i><span id="telefone">(11) 95771-6499</span></a>
+            <div class="contatos__card">
+                <h3 class="contatos__titulo">Entre em contato</h3>
+                <div class="contatos__info contatos--flex-col">
+                    <a href="#" class="contatos__item contatos__link"><i class="fa fa-envelope fa-xl"></i><span id="email">carlos.orlovas@outlook.com</span></a>
+                    <a href="#" class="contatos__item contatos__link"><i class="fa fa-brands fa-whatsapp fa-xl"></i><span id="telefone">(11) 95771-6499</span></a>
+                </div>
             </div>
         </div>
     </footer>

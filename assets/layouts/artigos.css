@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-    color: var(--strong-green);
+    color: var(--background-color);
 }
 
 /* CARD */
@@ -17,9 +17,9 @@
     height: 350px;
     width: 250px;
     padding: 12px;
-    background: var(--light-brown);
+    background: var(--light-background);
     box-shadow: 2px 2px 5px rgba(0,0,0,.7);
-    border-radius: 12px;
+    /* border-radius: 12px; */
     transition: all .5s ease-in-out;
 }
 
@@ -39,7 +39,7 @@
 
 .card__item-imagem {
     grid-area: imagem;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     max-width: 100%;
     height: 100%;
     opacity: 0.9;
@@ -73,5 +73,5 @@
     position: absolute;
     top: 28%;
     left: 33%;
-    color: #F0EBCE;
+    color: var(--background-color);
 }

@@ -14,16 +14,16 @@ btns, inputs, modal, dropdown, form, icon, label
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--light-green);
+    color: var(--strong-font-color);
     padding: 6rem 0;
 }
 
 @media screen and (min-width: 800px) {
-    .grid-2 {
+    .grid-3 {
         display: grid;
         grid:
-        'titulo1 titulo2' auto
-        'conteudo1 conteudo2' 1fr
+        'seccao1 seccao2' 1fr
+        'seccao3 seccao3' auto
         /auto 1fr;
     }
 }
